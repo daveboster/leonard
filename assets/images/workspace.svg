@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title">
+  <title id="title">Abstract workspace</title>
+  <rect width="900" height="620" fill="#eef2f6"/>
+  <rect x="110" y="120" width="680" height="380" rx="12" fill="#ffffff"/>
+  <rect x="160" y="180" width="280" height="42" rx="5" fill="#2a9bd7" opacity=".75"/>
+  <rect x="160" y="260" width="580" height="26" rx="4" fill="#c7d0db"/>
+  <rect x="160" y="314" width="510" height="26" rx="4" fill="#d7dde5"/>
+  <rect x="160" y="368" width="380" height="26" rx="4" fill="#c7d0db"/>
+</svg>

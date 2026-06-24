@@ -1,0 +1,53 @@
+title: Leonard the Emotional Support Fry
+description: A character website example for Leonard the Emotional Support Fry.
+url: https://daveboster.github.io
+baseurl: /leonard
+email: hello@boster.dev
+theme: newfire-jekyll-theme
+permalink: /updates/:title/
+
+newfire_theme:
+  brand_lines:
+    - Leonard
+    - The Fry
+  banner_image: /assets/images/leonard-campfire.png
+  footer_product_html: Leonard the Emotional Support Fry
+
+navigation:
+  - title: Home
+    url: /
+    nav: home
+  - title: About
+    url: /about/
+    nav: about
+  - title: Field Notes
+    url: /updates/
+    nav: updates
+  - title: Contact
+    url: /contact/
+    nav: contact
+  - title: Stickers
+    url: /preview/
+    nav: preview
+    style: button
+
+footer_links:
+  - title: Contact
+    url: /contact/
+  - title: Terms of Use
+    url: /terms/
+  - title: Privacy Policy
+    url: /privacy/
+
+social_links:
+  - title: Adventures
+    label: go
+    url: /updates/
+  - title: Stickers
+    label: :)
+    url: /preview/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

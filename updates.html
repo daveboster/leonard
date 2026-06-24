@@ -1,0 +1,22 @@
+---
+layout: page
+title: Updates
+description: Field notes and small adventures from Leonard.
+nav: updates
+permalink: /updates/
+hero_title: Field Notes
+hero_subtitle: Small reports from Leonard's snack-sized adventures.
+compact_banner: true
+banner_image: /assets/images/leonard-campfire.png
+---
+<section class="blog-list">
+  {% for post in site.posts %}
+    <article class="blog-entry">
+      <p class="entry-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <h2>{{ post.title }}</h2>
+      <p class="entry-category">{{ post.category_label | default: "Field Note" }}</p>
+      <p>{{ post.summary }}</p>
+      <a href="{{ post.url | relative_url }}">Read More &rarr;</a>
+    </article>
+  {% endfor %}
+</section>
