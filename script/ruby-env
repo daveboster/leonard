@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+RUBY_VERSION_FILE="$ROOT/.ruby-version"
+
+active_ruby_version() {
+  ruby -e 'print RUBY_VERSION' 2>/dev/null || true
+}
+
+activate_homebrew_ruby() {
+  local required_version="$1"
+  local required_major_minor
+  required_major_minor="$(awk -F. '{ print $1 "." $2 }' <<<"$required_version")"
+
+  local active_version
+  active_version="$(active_ruby_version)"
+  if [[ "$active_version" == "$required_major_minor"* ]]; then
+    return 0
+  fi
+
+  local prefixes
+  prefixes="${NEWFIRE_HOMEBREW_PREFIXES:-/opt/homebrew /usr/local}"
+
+  for prefix in $prefixes; do
+    local ruby_bin="$prefix/opt/ruby@$required_major_minor/bin"
+    local gem_bin="$prefix/lib/ruby/gems/$required_major_minor.0/bin"
+
+    if [[ -x "$ruby_bin/ruby" ]]; then
+      export PATH="$ruby_bin:$gem_bin:$PATH"
+      active_version="$(active_ruby_version)"
+
+      if [[ "$active_version" == "$required_major_minor"* ]]; then
+        return 0
+      fi
+    fi
+  done
+
+  echo "Required Ruby: $required_major_minor.x from $RUBY_VERSION_FILE" >&2
+  echo "Active Ruby: $(ruby -v 2>/dev/null || echo 'not found')" >&2
+  echo "Install with: brew install ruby@$required_major_minor" >&2
+  echo "Then retry this script, or put ruby@$required_major_minor first in PATH." >&2
+  exit 69
+}
+
+required_ruby="$(tr -d '[:space:]' < "$RUBY_VERSION_FILE")"
+activate_homebrew_ruby "$required_ruby"
+
+if ! command -v bundle >/dev/null 2>&1; then
+  cat >&2 <<MESSAGE
+Bundler is not installed for $(ruby -v).
+
+Install it with:
+  gem install bundler
+MESSAGE
+  exit 69
+fi

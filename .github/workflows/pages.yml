@@ -27,13 +27,15 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler-cache: true
+
+      - name: Install BATS
+        run: sudo apt-get update && sudo apt-get install -y bats
 
       - name: Set up Pages
         uses: actions/configure-pages@v5
 
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Check and build site
+        run: script/test-and-preview --check-only
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

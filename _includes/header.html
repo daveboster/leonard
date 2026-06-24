@@ -1,0 +1,23 @@
+{% include theme-vars.html %}
+<header class="site-header">
+  <a class="site-mark" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+    {% for line in brand_lines %}
+      <span>{{ line }}</span>
+    {% endfor %}
+  </a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    {% if site.navigation %}
+      {% for item in site.navigation %}
+        {% assign nav_class = "nav-link" %}
+        {% if item.style == "button" %}
+          {% assign nav_class = "nav-button" %}
+        {% endif %}
+        <a class="{{ nav_class }}{% if page.nav == item.nav %} is-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    {% else %}
+      <a class="nav-link{% if page.nav == 'home' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+      <a class="nav-link{% if page.nav == 'updates' %} is-active{% endif %}" href="{{ '/updates/' | relative_url }}">Updates</a>
+      <a class="nav-link{% if page.nav == 'contact' %} is-active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a>
+    {% endif %}
+  </nav>
+</header>

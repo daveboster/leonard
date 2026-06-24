@@ -1,0 +1,6 @@
+{% assign theme_settings = site.newfire_theme %}
+{% if theme_settings.brand_lines %}
+  {% assign brand_lines = theme_settings.brand_lines %}
+{% else %}
+  {% assign brand_lines = site.title | split: " " %}
+{% endif %}

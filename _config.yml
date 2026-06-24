@@ -3,7 +3,6 @@ description: A character website example for Leonard the Emotional Support Fry.
 url: https://daveboster.github.io
 baseurl: /leonard
 email: hello@boster.dev
-theme: newfire-jekyll-theme
 permalink: /updates/:title/
 
 newfire_theme:

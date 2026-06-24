@@ -1,0 +1,14 @@
+{% assign theme_settings = site.newfire_theme %}
+{% assign banner_image = page.banner_image | default: theme_settings.banner_image %}
+<section class="page-banner{% if page.compact_banner %} page-banner--compact{% endif %}"{% if banner_image %} style="--banner-image: url('{{ banner_image | relative_url }}')"{% endif %}>
+  <div class="page-banner__shade"></div>
+  <div class="page-banner__content">
+    <h1>{{ page.hero_title | default: page.title }}</h1>
+    {% if page.hero_subtitle %}
+      <p>{{ page.hero_subtitle }}</p>
+    {% endif %}
+    {% if page.hero_button_label and page.hero_button_url %}
+      <a class="hero-button" href="{{ page.hero_button_url | relative_url }}">{{ page.hero_button_label }}</a>
+    {% endif %}
+  </div>
+</section>

@@ -3,4 +3,6 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-exec "$ROOT/script/test-and-preview" "$@"
+source "$ROOT/script/ruby-env"
+
+exec "$@"

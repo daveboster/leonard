@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+host="127.0.0.1"
+port="4000"
+check_only=0
+skip_install=0
+
+usage() {
+  cat <<'USAGE'
+Usage: script/test-and-preview [options]
+
+Checks local requirements, then starts the Leonard site when they pass.
+
+Checks:
+  bundle install
+  bats test
+  bundle exec jekyll build
+  git diff --check
+
+Preview:
+  bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000
+
+Options:
+  --check-only       Run checks without starting the preview server.
+  --skip-install     Skip bundle install.
+  --host HOST        Preview host. Default: 127.0.0.1.
+  --port PORT        Preview port. Default: 4000.
+  -h, --help         Show this help text.
+USAGE
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --check-only)
+      check_only=1
+      shift
+      ;;
+    --skip-install)
+      skip_install=1
+      shift
+      ;;
+    --host)
+      host="${2:?--host requires a value}"
+      shift 2
+      ;;
+    --port)
+      port="${2:?--port requires a value}"
+      shift 2
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      echo "Unknown option: $1" >&2
+      usage >&2
+      exit 64
+      ;;
+  esac
+done
+
+run() {
+  echo "+ $*"
+  "$@"
+}
+
+cd "$ROOT"
+source "$ROOT/script/ruby-env"
+
+if ! command -v bats >/dev/null 2>&1; then
+  cat >&2 <<'MESSAGE'
+BATS is not installed or not on PATH.
+
+Install it with:
+  brew install bats-core
+MESSAGE
+  exit 69
+fi
+
+if [[ "$skip_install" -eq 0 ]]; then
+  run bundle install
+fi
+
+run bats test
+run bundle exec jekyll build
+run git diff --check
+
+if [[ "$check_only" -eq 1 ]]; then
+  exit 0
+fi
+
+echo "Preview URL: http://$host:$port/leonard/"
+exec bundle exec jekyll serve --livereload --host "$host" --port "$port"

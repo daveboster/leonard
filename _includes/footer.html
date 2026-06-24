@@ -1,0 +1,33 @@
+{% include theme-vars.html %}
+<footer class="site-footer">
+  {% if site.social_links %}
+    <div class="social-row" aria-label="Social links">
+      {% for link in site.social_links %}
+        {% assign social_href = link.url %}
+        {% unless social_href contains "://" or social_href contains "mailto:" %}
+          {% assign social_href = social_href | relative_url %}
+        {% endunless %}
+        <a href="{{ social_href }}" aria-label="{{ link.title }}">{{ link.label | default: link.title }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+  <nav class="footer-nav" aria-label="Footer navigation">
+    {% if site.footer_links %}
+      {% for link in site.footer_links %}
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+      {% endfor %}
+    {% else %}
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+    {% endif %}
+  </nav>
+  {% if site.email %}
+    <p class="footer-contact">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+  {% endif %}
+  {% if theme_settings.footer_product_html %}
+    <p class="footer-product">{{ theme_settings.footer_product_html }}</p>
+  {% endif %}
+</footer>

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% include page-banner.html %}
+<article class="content-section narrow update-detail">
+  <p class="entry-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+  <h2>{{ page.title }}</h2>
+  {% if page.category_label %}
+    <p class="entry-category">{{ page.category_label }}</p>
+  {% endif %}
+  {{ content }}
+  {% assign updates_url = site.updates_url | default: '/updates/' %}
+  <p><a href="{{ updates_url | relative_url }}">Updates</a></p>
+</article>
