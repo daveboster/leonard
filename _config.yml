@@ -1,5 +1,5 @@
-title: Leonard the Emotional Support Fry
-description: A character website example for Leonard the Emotional Support Fry.
+title: Leonard
+description: A character website example for Leonard.
 url: https://daveboster.github.io
 baseurl: /leonard
 email: hello@boster.dev
@@ -8,9 +8,8 @@ permalink: /updates/:title/
 newfire_theme:
   brand_lines:
     - Leonard
-    - The Fry
   banner_image: /assets/images/leonard-campfire.png
-  footer_product_html: Leonard the Emotional Support Fry
+  footer_product_html: Leonard
 
 navigation:
   - title: Home
