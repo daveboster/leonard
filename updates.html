@@ -10,7 +10,8 @@ compact_banner: true
 banner_image: /assets/images/leonard-campfire.png
 ---
 <section class="blog-list">
-  {% for post in site.posts %}
+  {% assign field_notes = site.posts | sort: "date" %}
+  {% for post in field_notes %}
     <article class="blog-entry">
       <p class="entry-date">{{ post.date | date: "%B %-d, %Y" }}</p>
       <h2>{{ post.title }}</h2>

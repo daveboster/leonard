@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-{% include page-banner.html %}
-<article class="content-section narrow update-detail">
+{% if page.banner_image %}
+  {% include page-banner.html %}
+{% endif %}
+<article class="content-section narrow update-detail{% unless page.banner_image %} update-detail--no-banner{% endunless %}">
   <p class="entry-date">{{ page.date | date: "%B %-d, %Y" }}</p>
   <h2>{{ page.title }}</h2>
   {% if page.category_label %}

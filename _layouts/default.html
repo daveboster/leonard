@@ -13,7 +13,15 @@
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   </head>
-  <body class="{% if page.layout == 'legal' %}legal-page{% endif %}">
+  {% assign body_class = "" %}
+  {% if page.layout == "legal" %}
+    {% assign body_class = "legal-page" %}
+  {% elsif page.layout == "post" %}
+    {% unless page.banner_image %}
+      {% assign body_class = "legal-page no-banner-post" %}
+    {% endunless %}
+  {% endif %}
+  <body class="{{ body_class }}">
     {% include header.html %}
     <main>
       {{ content }}

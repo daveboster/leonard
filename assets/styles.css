@@ -413,6 +413,10 @@ a:hover {
   margin-top: 8px;
 }
 
+.update-detail--no-banner {
+  padding-top: 70px;
+}
+
 .legal-copy {
   padding-top: 70px;
   padding-bottom: 86px;
