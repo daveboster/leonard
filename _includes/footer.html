@@ -1,7 +1,7 @@
 {% include theme-vars.html %}
 <footer class="site-footer">
   {% if site.social_links %}
-    <div class="social-row" aria-label="Social links">
+    <div class="social-row" aria-label="Featured links">
       {% for link in site.social_links %}
         {% assign social_href = link.url %}
         {% unless social_href contains "://" or social_href contains "mailto:" %}

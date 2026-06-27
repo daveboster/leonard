@@ -549,19 +549,23 @@ a:hover {
 
 .social-row {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
 .social-row a {
-  display: grid;
-  width: 26px;
-  height: 26px;
-  place-items: center;
-  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 18px;
+  border-radius: 999px;
   background: #fff;
   color: var(--footer);
-  font-size: 0.66rem;
+  font-size: 0.68rem;
   font-weight: 700;
+  letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
 }

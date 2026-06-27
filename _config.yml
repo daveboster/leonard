@@ -38,11 +38,11 @@ footer_links:
     url: /privacy/
 
 social_links:
-  - title: Adventures
-    label: go
+  - title: Field Notes
+    label: Field Notes
     url: /updates/
   - title: Stickers
-    label: :)
+    label: Stickers
     url: /preview/
 
 exclude:
