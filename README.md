@@ -17,7 +17,7 @@ script/check-ruby
 script/test-and-preview
 ```
 
-Open `http://127.0.0.1:4000/leonard/` for the local preview.
+Open `http://127.0.0.1:4000/` for the local preview.
 
 Run the same checks GitHub Pages runs without starting a server:
 

@@ -88,7 +88,7 @@ SCRIPT
 
   [ "$status" -eq 0 ]
   [[ "$(cat "$COMMAND_LOG")" == *$'git diff --check\nbundle exec jekyll serve --livereload --host 0.0.0.0 --port 4100' ]]
-  [[ "$output" == *"Preview URL: http://0.0.0.0:4100/leonard/"* ]]
+  [[ "$output" == *"Preview URL: http://0.0.0.0:4100/"* ]]
 }
 
 @test "test-and-preview supports skipping bundle install" {

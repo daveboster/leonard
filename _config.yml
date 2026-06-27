@@ -1,7 +1,7 @@
 title: Leonard
 description: A character website example for Leonard.
-url: https://daveboster.github.io
-baseurl: /leonard
+url: https://fryventures.com
+baseurl: ""
 email: leonard@fryventures.com
 permalink: /updates/:title/
 

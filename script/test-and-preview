@@ -92,5 +92,5 @@ if [[ "$check_only" -eq 1 ]]; then
   exit 0
 fi
 
-echo "Preview URL: http://$host:$port/leonard/"
+echo "Preview URL: http://$host:$port/"
 exec bundle exec jekyll serve --livereload --host "$host" --port "$port"
