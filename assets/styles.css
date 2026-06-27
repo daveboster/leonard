@@ -161,7 +161,7 @@ a:hover {
   background:
     linear-gradient(135deg, rgba(55, 64, 82, 0.72), rgba(55, 64, 82, 0.36)),
     var(--banner-image, linear-gradient(135deg, #7b8794, #344052));
-  background-position: center;
+  background-position: var(--banner-position, center top);
   background-size: cover;
 }
 

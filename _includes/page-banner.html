@@ -1,6 +1,6 @@
 {% assign theme_settings = site.newfire_theme %}
 {% assign banner_image = page.banner_image | default: theme_settings.banner_image %}
-<section class="page-banner{% if page.compact_banner %} page-banner--compact{% endif %}"{% if banner_image %} style="--banner-image: url('{{ banner_image | relative_url }}')"{% endif %}>
+<section class="page-banner{% if page.compact_banner %} page-banner--compact{% endif %}" style="{% if banner_image %}--banner-image: url('{{ banner_image | relative_url }}');{% endif %}{% if page.banner_position %} --banner-position: {{ page.banner_position }};{% endif %}">
   <div class="page-banner__shade"></div>
   <div class="page-banner__content">
     <h1>{{ page.hero_title | default: page.title }}</h1>
