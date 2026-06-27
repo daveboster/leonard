@@ -448,6 +448,16 @@ a:hover {
   padding-bottom: 88px;
 }
 
+.preview-intro {
+  max-width: 640px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.preview-intro p {
+  margin: 10px 0 0;
+}
+
 .preview-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -479,6 +489,37 @@ a:hover {
 .preview-copy ul {
   margin: 0;
   padding-left: 1.2rem;
+}
+
+.sticker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.sticker-card {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.sticker-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.sticker-card h3 {
+  margin-top: 6px;
+}
+
+.sticker-card p {
+  margin: 0;
 }
 
 .contact-section {
@@ -602,6 +643,10 @@ a:hover {
   }
 
   .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticker-grid {
     grid-template-columns: 1fr;
   }
 
