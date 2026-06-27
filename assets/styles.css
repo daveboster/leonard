@@ -618,15 +618,24 @@ a:hover {
 
   .site-nav {
     justify-content: center;
-    gap: 16px;
+    gap: 12px 14px;
+  }
+
+  .nav-button {
+    padding: 7px 14px;
   }
 
   .page-banner {
     min-height: 470px;
+    place-items: start center;
   }
 
   .page-banner--compact {
     min-height: 330px;
+  }
+
+  .page-banner__content {
+    padding-top: 178px;
   }
 
   .feature-row,
