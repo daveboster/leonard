@@ -2,6 +2,7 @@ title: Leonard
 description: A character website example for Leonard.
 url: https://fryventures.com
 baseurl: ""
+favicon: /favicon.svg
 email: leonard@fryventures.com
 permalink: /updates/:title/
 

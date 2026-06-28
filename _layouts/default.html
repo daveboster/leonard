@@ -9,7 +9,9 @@
       <link rel="canonical" href="{{ page.url | absolute_url }}">
     {% endif %}
     {% if site.favicon %}
-      <link rel="icon" href="{{ site.favicon | relative_url }}">
+      <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/svg+xml">
+      <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}">
+      <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   </head>

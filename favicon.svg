@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Leonard favicon</title>
+  <rect width="64" height="64" rx="14" fill="#2a9bd7"/>
+  <path d="M22 17c0-6 4.5-10 10-10s10 4 10 10v30c0 6-4.5 10-10 10s-10-4-10-10z" fill="#ffd75a"/>
+  <path d="M25 17c0-3.9 3-6.9 7-6.9s7 3 7 6.9v30c0 3.9-3 6.9-7 6.9s-7-3-7-6.9z" fill="#ffe584"/>
+  <path d="M22.7 17.2c0-5.7 4.1-9.8 9.3-9.8s9.3 4.1 9.3 9.8v29.6c0 5.7-4.1 9.8-9.3 9.8s-9.3-4.1-9.3-9.8z" fill="none" stroke="#f6b93b" stroke-width="2"/>
+  <path d="M19 25.5h26v4c0 2.5-2 4.5-4.5 4.5h-4.2c-1.8 0-3.4-1-4.3-2.5-.9 1.5-2.5 2.5-4.3 2.5h-4.2c-2.5 0-4.5-2-4.5-4.5z" fill="#111827"/>
+  <path d="M30.3 27h3.4" stroke="#2a9bd7" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M27.2 40.2c2.6 2 7 2 9.6 0" fill="none" stroke="#111827" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M41.3 18.3c5.2 1.6 9 6.5 9 12.2 0 6-4.1 11.1-9.7 12.4" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".86"/>
+  <path d="M22.7 18.3c-5.2 1.6-9 6.5-9 12.2 0 6 4.1 11.1 9.7 12.4" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".86"/>
+</svg>
