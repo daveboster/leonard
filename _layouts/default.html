@@ -13,6 +13,7 @@
       <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}">
       <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
     {% endif %}
+    {% include new-relic-browser.html %}
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   </head>
   {% assign body_class = "" %}

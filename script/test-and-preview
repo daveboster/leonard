@@ -7,6 +7,7 @@ host="127.0.0.1"
 port="4000"
 check_only=0
 skip_install=0
+production=0
 
 usage() {
   cat <<'USAGE'
@@ -25,6 +26,7 @@ Preview:
 
 Options:
   --check-only       Run checks without starting the preview server.
+  --production       Build with JEKYLL_ENV=production for deploy output.
   --skip-install     Skip bundle install.
   --host HOST        Preview host. Default: 127.0.0.1.
   --port PORT        Preview port. Default: 4000.
@@ -40,6 +42,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --skip-install)
       skip_install=1
+      shift
+      ;;
+    --production)
+      production=1
       shift
       ;;
     --host)
@@ -85,7 +91,11 @@ if [[ "$skip_install" -eq 0 ]]; then
 fi
 
 run bats test
-run bundle exec jekyll build
+if [[ "$production" -eq 1 ]]; then
+  run env JEKYLL_ENV=production bundle exec jekyll build
+else
+  run bundle exec jekyll build
+fi
 run git diff --check
 
 if [[ "$check_only" -eq 1 ]]; then

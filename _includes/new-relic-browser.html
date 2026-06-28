@@ -1,0 +1,52 @@
+{% if jekyll.environment == "production" %}
+<script>
+  (function () {
+    var doNotTrack =
+      navigator.doNotTrack === "1" ||
+      window.doNotTrack === "1" ||
+      navigator.msDoNotTrack === "1";
+    var globalPrivacyControl = navigator.globalPrivacyControl === true;
+
+    if (doNotTrack || globalPrivacyControl) {
+      return;
+    }
+
+    window.NREUM || (window.NREUM = {});
+    window.NREUM.init = {
+      ajax: {
+        deny_list: ["bam.nr-data.net"]
+      },
+      browser_consent_mode: {
+        enabled: false
+      },
+      performance: {
+        capture_detail: false,
+        capture_marks: false,
+        capture_measures: true
+      },
+      privacy: {
+        cookies_enabled: false
+      }
+    };
+    window.NREUM.loader_config = {
+      accountID: 3661667,
+      agentID: 1589245887,
+      applicationID: 1589245887,
+      licenseKey: "NRBR-2ad32a64e14677a624e",
+      trustKey: 3661667
+    };
+    window.NREUM.info = {
+      applicationID: 1589245887,
+      beacon: "bam.nr-data.net",
+      errorBeacon: "bam.nr-data.net",
+      licenseKey: "NRBR-2ad32a64e14677a624e",
+      sa: 1
+    };
+
+    var newRelicLoader = document.createElement("script");
+    newRelicLoader.src = "https://js-agent.newrelic.com/nr-loader-spa-current.min.js";
+    newRelicLoader.async = true;
+    document.head.appendChild(newRelicLoader);
+  })();
+</script>
+{% endif %}

@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Check and build site
-        run: script/test-and-preview --check-only
+        run: script/test-and-preview --check-only --production
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

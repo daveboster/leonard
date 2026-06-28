@@ -39,7 +39,11 @@ write_bundle_stub() {
 #!/usr/bin/env bash
 set -euo pipefail
 
-printf 'bundle %s\n' "$*" >> "$COMMAND_LOG"
+if [[ "${JEKYLL_ENV:-}" == "production" ]]; then
+  printf 'JEKYLL_ENV=production bundle %s\n' "$*" >> "$COMMAND_LOG"
+else
+  printf 'bundle %s\n' "$*" >> "$COMMAND_LOG"
+fi
 
 if [[ "${1:-}" == "exec" && "${2:-}" == "jekyll" && "${3:-}" == "serve" ]]; then
   printf 'stub serve\n'
@@ -98,6 +102,13 @@ SCRIPT
   [[ "$(cat "$COMMAND_LOG")" == $'bats test\nbundle exec jekyll build\ngit diff --check' ]]
 }
 
+@test "test-and-preview can build production output" {
+  run "$REPO_ROOT/script/test-and-preview" --check-only --production
+
+  [ "$status" -eq 0 ]
+  [[ "$(cat "$COMMAND_LOG")" == $'bundle install\nbats test\nJEKYLL_ENV=production bundle exec jekyll build\ngit diff --check' ]]
+}
+
 @test "with-ruby runs commands through the repo Ruby setup" {
   run "$REPO_ROOT/script/with-ruby" ruby -e "print RUBY_VERSION"
 
@@ -112,5 +123,6 @@ SCRIPT
   [[ "$output" == *"bundle install"* ]]
   [[ "$output" == *"bats test"* ]]
   [[ "$output" == *"bundle exec jekyll build"* ]]
+  [[ "$output" == *"--production"* ]]
   [[ "$output" == *"bundle exec jekyll serve"* ]]
 }
