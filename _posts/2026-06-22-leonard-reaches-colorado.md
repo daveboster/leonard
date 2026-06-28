@@ -6,37 +6,24 @@ category_label: Field Note
 banner_image: /assets/images/leonard-mountain-lake-peaks.jpg
 banner_position: center center
 ---
-On Monday, June 22, Leonard reached Colorado on the long road to California.
-This was not the final destination. It was more like the part of the trip where
-the road starts acting serious.
+Today I officially made it to Colorado.
 
-The mountains showed up outside the window, the sky opened into layers, and
-Leonard kept his usual position near the glass: quiet, watchful, and entirely
-ready to provide emotional support at highway speed.
+![Leonard reaches Colorado]({{ '/assets/images/leonard-reaches-colorado-1.jpg' | relative_url }})
 
-![Leonard watching Colorado arrive through the window]({{ '/assets/images/leonard-heading-to-colorado-1.jpg' | relative_url }})
+Crossing the state line felt like a milestone. After days of watching the landscape slowly change outside the window, the plains finally gave way to the mountains I’d been looking forward to since this adventure began.
 
-Colorado changed the air first. Leonard noticed that before he noticed the
-views. The breeze carried pine, cold water, wet stone, and the faint smell of
-campground dust that had been politely rained on. He considered this a strong
-opening argument.
+There’s something about Colorado that makes you want to slow down. The air feels different. The sky somehow seems bigger. And everywhere I looked there were mountains reminding me just how small a traveling french fry can be.
 
-Then came the sounds: tires hissing on mountain roads, trees moving in little
-bursts of wind, distant water, trailer doors clicking shut, and someone
-somewhere trying to zip a bag that was clearly too full.
+![Leonard reaches Colorado]({{ '/assets/images/leonard-reaches-colorado-2.jpg' | relative_url }})
 
-![Leonard taking in the mountain road]({{ '/assets/images/leonard-heading-to-colorado-2.jpg' | relative_url }})
+The drive through the state was one incredible view after another. Every turn seemed to reveal another mountain range, another winding road, or another place that made everyone quietly reach for their cameras. Sometimes nobody said much at all. We just watched the scenery roll by together.
 
-The closer Leonard got to the mountains, the more serious he became about his
-job: protect the mood, encourage snack breaks, and make sure the trip kept
-feeling like an adventure.
+One thing I’ve learned on this trip is that the destination isn’t the only reason to travel. Some of the best memories happen between the destinations—sharing snacks, laughing about absolutely nothing, finding unexpected overlooks, and watching the miles disappear beneath the tires.
 
-![Leonard crossing into Colorado]({{ '/assets/images/leonard-crossing-into-colorado.jpg' | relative_url }})
+![Leonard reaches Colorado]({{ '/assets/images/leonard-reaches-colorado-3.jpg' | relative_url }})
 
-He was not driving. He was not navigating. He was simply present, which is
-exactly what an emotional support fry is supposed to do.
+Tonight we are parked beneath Colorado’s wide-open sky, and I’m ending the day grateful for good friends, another successful travel day, and one more state checked off the map.
 
-By evening, the mountain mood had done its work. Leonard was tired in the best
-possible way: full of air, scenery, and enough quiet to last until morning.
+California is getting closer, but for now, I’m perfectly happy calling Colorado home for the night.
 
-![Leonard wraps up the mountain day]({{ '/assets/images/leonard-sleeping.png' | relative_url }})
+![Leonard reaches Colorado]({{ '/assets/images/leonard-reaches-colorado-4.png' | relative_url }})
