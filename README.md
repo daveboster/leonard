@@ -8,6 +8,17 @@ A Jekyll site for Leonard the Emotional Support Fry.
   are the source of truth for generating, editing, and evaluating Leonard
   sticker art and website-only image assets.
 
+## Day One Field Notes
+
+Use the repo skill at `.codex/skills/dayone-field-notes/` to import Day One
+export ZIP files into Field Notes without manual copy/paste. Start with a
+dry-run, then apply only after the target post and banner decision look right:
+
+```bash
+python3 .codex/skills/dayone-field-notes/scripts/import_dayone_field_note.py ~/Downloads/export.zip --repo .
+python3 .codex/skills/dayone-field-notes/scripts/import_dayone_field_note.py ~/Downloads/export.zip --repo . --apply
+```
+
 ## Develop
 
 This site expects Ruby 3.2.

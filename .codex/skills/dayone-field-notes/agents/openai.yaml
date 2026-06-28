@@ -1,0 +1,4 @@
+interface:
+  display_name: "Day One Field Notes"
+  short_description: "Import Day One exports into Leonard Field Notes."
+  default_prompt: "Import this Day One export into the matching Leonard Field Note."
