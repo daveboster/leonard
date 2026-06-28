@@ -5,3 +5,4 @@
 /vendor/
 *.gem
 Gemfile.lock
+.DS_Store
