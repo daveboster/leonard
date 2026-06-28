@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leonard reaches Arizona
-summary: Leonard reaches Arizona, studies the desert light, warms up by the campfire, and meets a few surprisingly polite desert dogs.
+title: Reaching Arizona & Desert Dogs 🌵🐕
+summary: Reaching Arizona, studying the desert light, warming up by the campfire, and making some few surprisingly polite new desert friends.
 category_label: Field Note
 banner_image: /assets/images/leonard-reaches-arizona-3.png
 banner_position: center center

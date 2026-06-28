@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leonard packs for the road
-summary: Leonard packs for California, Las Vegas, and the long ride home to Elkhorn with his closest friends and a glamping trailer.
+title: Packing for the road
+summary: Packing for California, Las Vegas, and the long ride home to Elkhorn with his closest friends and a glamping trailer.
 category_label: Field Note
 ---
 ![Leonard packed for the road]({{ '/assets/images/leonard-2026-trip.png' | relative_url }})

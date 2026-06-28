@@ -9,7 +9,7 @@ newfire_theme:
   brand_lines:
     - Leonard
   banner_image: /assets/images/leonard-campfire.png
-  footer_product_html: Leonard
+  footer_product_html: Leonard - Fry Ventures
 
 navigation:
   - title: Home

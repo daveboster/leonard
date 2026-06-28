@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leonard visits the Kansas City Fan Festival
-summary: Leonard briefly apparates away from the road trip to visit the Kansas City Fan Festival with Aunt Deanna and Uncle David.
+title: Quick Detour to Kansas City ⚽
+summary: Briefly using my magical prowess to apparate to the Kansas City Fan Festival with Aunt Deanna and Uncle David.
 category_label: Field Note
 banner_image: /assets/images/leonard-kc-fifa-fan-festival.jpg
 banner_position: center bottom

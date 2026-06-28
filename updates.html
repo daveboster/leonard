@@ -5,12 +5,12 @@ description: Field notes and small adventures from Leonard.
 nav: updates
 permalink: /updates/
 hero_title: Field Notes
-hero_subtitle: Small reports from Leonard's snack-sized adventures.
+hero_subtitle: Emotional support updates from snack-sized adventures
 compact_banner: true
 banner_image: /assets/images/fryventures-updates-banner.png
 ---
 <section class="blog-list">
-  {% assign field_notes = site.posts | sort: "date" %}
+  {% assign field_notes = site.posts | sort: "date" | reverse %}
   {% for post in field_notes %}
     <article class="blog-entry">
       <p class="entry-date">{{ post.date | date: "%B %-d, %Y" }}</p>
