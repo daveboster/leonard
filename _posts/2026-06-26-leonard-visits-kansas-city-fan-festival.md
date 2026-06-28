@@ -6,47 +6,30 @@ category_label: Field Note
 banner_image: /assets/images/leonard-kc-fifa-fan-festival.jpg
 banner_position: center bottom
 ---
-Leonard briefly left the road trip by apparating to Kansas City, Harry
-Potter-style. It was not the usual Airstream method of transportation, but
-sometimes a field note requires efficiency.
+Today I took a brief break from the road trip.
 
-He arrived with his usual travel priorities: stay upright, keep the sunglasses
-steady, and bring a calm presence to a very loud day with Aunt Deanna and
-Uncle David.
+Instead of traveling by road, I decided to apparate to Kansas City Harry Potter-style. It isn’t my usual method of transportation, but sometimes a road trip calls for a little magic.
 
-The [FIFA Fan Festival](https://kansascityfwc26.com/fifa-fan-festival/)
-filled the city with match-day energy, music, screens, and people wearing the
-kind of orange that makes a small yellow fry feel right at home. Leonard did
-not have a tactical opinion about the formation. He did not need one. His job
-was morale.
+I arrived with my usual priorities: stay upright, keep my sunglasses level, and provide emotional support wherever it might be needed.
 
-The day before, Kansas City had hosted the Netherlands and Tunisia at GEHA
-Field at Arrowhead Stadium. The Group F match kicked off at 6:00 p.m. local
-time, and the Netherlands came away with a 3-1 win in the rain. Leonard
-respected the Dutch possession, the efficient passing, and the way a whole
-crowd can become temporarily convinced that weather is simply part of the
-occasion.
+That turned out to be at the FIFA Fan Festival with Aunt Deanna and Uncle David.
 
-That result, paired with Japan and Sweden drawing 1-1 at the same time, put the
-Netherlands on top of Group F with seven points and sent them toward Morocco in
-the Round of 32 in Monterrey. Leonard did not fill out a bracket. He did,
-however, understand the emotional importance of advancing.
+The whole city was buzzing with match-day excitement. There was music, giant video screens, fans everywhere, and enough orange jerseys that I felt like I blended in surprisingly well for a small yellow fry. I don’t pretend to be a soccer strategist, so I didn’t spend much time analyzing formations or debating tactics. My job was morale, and I take that responsibility seriously.
 
-![Leonard at the Kansas City FIFA Fan Festival]({{ '/assets/images/leonard-kc-fifa-fan-festival.jpg' | relative_url }})
+The day before, Kansas City hosted the Netherlands and Tunisia at Arrowhead Stadium. The Netherlands earned a 3–1 victory in the rain, and from everything I heard, they looked composed and efficient all evening. I have a lot of respect for a team that can stay focused while everyone else is getting soaked.
 
-From his spot in the crowd, Leonard took in the stage, the big festival signs,
-and the wave of people moving like everyone had agreed to be part of the same
-moment for a little while. It was exactly the kind of environment where an
-emotional support fry can do meaningful work without saying anything.
+With that result—and Japan and Sweden finishing in a draw—the Netherlands moved to the top of Group F and advanced to the Round of 32. I didn’t fill out a tournament bracket before leaving home, but I certainly understand how exciting it is to keep moving on to the next adventure.
 
-Kansas City brought the volume. Leonard brought the steady face. Aunt Deanna
-and Uncle David brought the kind of company that makes a big event feel easy to
-remember.
+![Leonard visits the Kansas City Fan Festival]({{ '/assets/images/leonard-visits-kansas-city-fan-festival-1.jpg' | relative_url }})
 
-It was a good break from the road. It was loud, bright, crowded, and generous
-in the way a festival can be when everyone has agreed to care about the same
-thing for a while.
+Standing in the middle of the Fan Festival, I watched thousands of people enjoying the same moment together. The stage was alive with music, the crowd never seemed to stop moving, and everywhere I looked people were smiling, cheering, and celebrating the game.
 
-When it was over, Leonard knew it was time to return to the Airstream, the
-desert air, and the long road west. He adjusted his sunglasses, thanked Kansas
-City for the hospitality, and apparated back to the road trip.
+It reminded me that sometimes you don’t have to say much to be part of something special.
+
+Kansas City brought the energy. I brought the steady smile. Aunt Deanna and Uncle David brought the kind of company that makes even a busy festival feel comfortable.
+
+It was a wonderful break from the road—loud, colorful, and full of people simply enjoying being together.
+
+When the festival came to an end, I adjusted my sunglasses, thanked Kansas City for the hospitality, and, with one more bit of magic, apparated back to the Airstream.
+
+The road to California was waiting.
