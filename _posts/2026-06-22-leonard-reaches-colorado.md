@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leonard reaches Colorado
-summary: Leonard reaches Colorado, settles into the mountain mood, and listens to the smells, sights, and sounds of the high country.
+summary: Leonard crosses into Colorado, takes in the mountain views, and settles in beneath a wide-open sky on the road to California.
 category_label: Field Note
 banner_image: /assets/images/leonard-mountain-lake-peaks.jpg
 banner_position: center center
