@@ -1,27 +1,28 @@
 ---
 layout: post
 title: Leonard packs for the road
-summary: Leonard packs for California, Las Vegas, and the long ride home to Elkhorn with his closest friends and an old Airstream trailer.
+summary: Leonard packs for California, Las Vegas, and the long ride home to Elkhorn with his closest friends and a glamping trailer.
 category_label: Field Note
 ---
 ![Leonard packed for the road]({{ '/assets/images/leonard-2026-trip.png' | relative_url }})
 
-Leonard began by packing for the road. Not dramatically. Not with a checklist
-that required a clipboard. He simply gathered the essentials: sunglasses, a
-steady smile, and enough emotional support to cover the miles between home and
-California.
+I started packing for the road the only way I know how. No drama. No
+color-coded checklist. Just the essentials: my sunglasses, a steady smile, and
+enough emotional support to make it all the way from home to California.
 
-The plan was ambitious in the way good road trips usually are. Leonard would
-head west with his closest friends in an old Airstream trailer, checking out
-the sights, being part of nature along the way, and letting the country unfold
-one stop at a time.
+The plan is ambitious in the best possible way. I am heading west with some of
+my closest friends in a glamping trailer. We will take our time, stop wherever
+something looks interesting, spend plenty of nights under the stars, and let the
+country unfold one mile at a time.
 
-California was the big destination, but Leonard understood that a trip is not
-only the place at the end. It is the coffee stops, the campsite chairs, the
-windows full of sky, and the small moments when everyone gets quiet because the
-view is doing all the talking.
+California may be the destination, but I have learned that the best part of any
+road trip is not the place at the end. It is the coffee stops that turn into
+conversations, the campsite chairs around a fire, the endless sky outside the
+window, and those quiet moments when everyone stops talking because the view has
+already said everything that needed to be said.
 
-After California, the route would bend toward Las Vegas before the final flight
-back home to Elkhorn, Nebraska. Leonard was ready for all of it: the desert
-light, the trailer steps, the long conversations, and the particular kind of
-friendship that happens when everyone agrees to keep moving together.
+When California is behind us, we will point the van toward Las Vegas before
+catching a flight home to Elkhorn, Nebraska. I am looking forward to all of it:
+the desert sunsets, climbing in and out of the trailer, the long conversations
+that only happen on the road, and the kind of friendships that grow a little
+stronger every time everyone decides to keep moving together.
